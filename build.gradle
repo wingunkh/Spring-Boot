@@ -21,3 +21,7 @@ dependencies { //라이브러리 의존 관계
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+jar {
+	enabled = false
+}
