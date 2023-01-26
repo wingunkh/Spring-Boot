@@ -19,7 +19,7 @@ class MemoryMemberRepositoryTest {
     @Test
     public void save(){
         Member member= new Member();
-        member.setName("spring"); //따옴표 닫지 않고 Ctrl+Shift+Enter 단축키를 사용하여 쉽게 탈출할 수 있다.
+        member.setName("spring"); //따옴표 닫지 않고 Ctrl + Shift + Enter 단축키를 사용하여 쉽게 탈출할 수 있다.
 
         repository.save(member);
         Member result = repository.findById(member.getId()).get();
