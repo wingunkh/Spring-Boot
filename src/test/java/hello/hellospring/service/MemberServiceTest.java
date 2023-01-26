@@ -1,4 +1,4 @@
-//MemberSerive 클래스에서 Ctrl + Shift + T 단축키 사용
+//MemberService 클래스에서 Ctrl + Shift + T 단축키 사용
 
 package hello.hellospring.service;
 
