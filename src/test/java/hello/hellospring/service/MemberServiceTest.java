@@ -26,7 +26,6 @@ class MemberServiceTest {
         memberRepository.clearStore();
     }
 
-
     @Test
     void join() {
         //given
@@ -38,7 +37,7 @@ class MemberServiceTest {
 
         //then
         Member target = memberService.findOne(saveId).get();
-        assertThat(member.getName()).isEqualTo(target.getName());
+        assertThat(target.getName()).isEqualTo(member.getName());
     }
 
     @Test
