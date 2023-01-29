@@ -12,7 +12,9 @@ import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository;
 
-    @Autowired //객체 생성 시점에 스프링 컨테이너에서 해당 스프링 빈을 찾아서 주입
+    @Autowired
+    //의존성 주입(Dependency Injection)에는 필드 주입, setter 주입, 생성자 주입 3가지 방법이 있다.
+    //생성자 주입 방법이 권장되며, 객체 생성 시점에 스프링 컨테이너에서 해당 스프링 빈을 찾아서 주입한다.
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
