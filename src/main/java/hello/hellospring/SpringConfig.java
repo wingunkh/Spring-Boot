@@ -1,6 +1,7 @@
 package hello.hellospring;
 
 import hello.hellospring.repository.JdbcMemberRepository;
+import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import hello.hellospring.service.MemberService;
@@ -14,7 +15,7 @@ import javax.sql.DataSource;
 public class SpringConfig {
     private DataSource dataSource;
 
-    @Autowired //객체 생성 시점에 스프링 컨테이너에서 해당 스프링 빈을 찾아서 주입
+    @Autowired
     public SpringConfig(DataSource dataSource) {
         this.dataSource = dataSource;
     }
@@ -27,6 +28,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
         // return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+        // return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
