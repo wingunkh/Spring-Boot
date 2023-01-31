@@ -15,6 +15,8 @@ repositories {
 dependencies { //라이브러리 의존 관계
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //스프링 부트 라이브러리. Thymeleaf는 템플릿 엔진이다.
 	implementation 'org.springframework.boot:spring-boot-starter-web' //스프링 부트 라이브러리. Spring Boot에는 Apache Tomcat이 내장되어있다.
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc' //JDBC 라이브러리
+	runtimeOnly 'com.h2database:h2' //h2 데이터베이스 라이브러리
 	testImplementation 'org.springframework.boot:spring-boot-starter-test' //테스트 라이브러리
 }
 

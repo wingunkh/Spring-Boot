@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service //스프링 빈으로 자동 등록
+// @Service //스프링 빈으로 자동 등록
 public class MemberService {
     private final MemberRepository memberRepository;
 
