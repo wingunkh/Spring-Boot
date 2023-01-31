@@ -1,7 +1,13 @@
 package hello.hellospring.domain;
 
+
+import javax.persistence.*;
+
+@Entity //JPA가 클래스를 테이블과 매핑
 public class Member {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
     public Long getId() {
