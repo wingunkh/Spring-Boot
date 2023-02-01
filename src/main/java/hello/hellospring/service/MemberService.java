@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-// @Service //스프링 빈으로 자동 등록
+//@Service //스프링 빈으로 자동 등록
 @Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
